@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: -1px;
+}
+
+body {
+  background-color: #343434;
+  color: white;
+}
+
+b {
+  color: rgb(255, 82, 111);
+}
+
+    /* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  width: 900px;
+  margin: 20px 0;
+  line-height: 33px;
+  font-size: 30px;
+}
+
+/* Loc */
+
+.loc {
+  background-color: #242424;
+  padding: 10px;
+}
+
+.loc p {
+  color: white;
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 15px;
+  margin: 0;
+  text-align: center;
+  padding: 0 25px;
+}
+
+#city {
+  color: red;
+  font-weight: bold;
+}
+
+/* Headline vsl */
+
+.headline-vsl, .vsl-verifique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vsl-verifique p {
+  margin-top: 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.vsl-verifique i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+    /* Footer */
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 40px;
+  align-items: center;
+}
+
+.footer-programa {
+  color: rgba(255, 255, 255, 0.645);
+  width: 500px;
+  text-align: justify;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.427);
+}
+
+.termos {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.termos a, .copyright {
+  margin-top: 20px;
+}
+
+.termos a {
+  text-decoration: none;
+  color: white;
+}
+
+.fb-texto {
+  margin-top: 30px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.311);
+  width: 900px;
+}
+
+    /* Responsivo */
+
+/* Header e Headline */
+
+@media (max-width: 930px) {
+  header h1 {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .vsl-verifique {
+    width: 100%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    line-height: 27px;
+    font-size: 25px;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 956px) {
+  .fb-texto {
+    width: 90%;
+  }
+}
+
+@media (max-width: 590px) {
+  .footer-programa {
+    width: 90%;
+  }
+}
