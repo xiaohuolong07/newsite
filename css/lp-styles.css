@@ -17,7 +17,7 @@ body {
   color: white;
 }
 
-b {
+b, #city {
   color: var(--rosa);
 }
 
