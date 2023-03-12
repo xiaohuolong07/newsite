@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
+:root {
+  --rosa: rgb(255, 82, 111);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +18,7 @@ body {
 }
 
 b {
-  color: rgb(255, 82, 111);
+  color: var(--rosa);
 }
 
     /* Header */
@@ -51,7 +55,6 @@ header h1 {
 }
 
 #city {
-  color: red;
   font-weight: bold;
 }
 
@@ -112,8 +115,15 @@ footer {
   color: white;
 }
 
+.fb-content {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .fb-texto {
-  margin-top: 30px;
+  padding: 30px 0;
   font-size: 0.7rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.311);
