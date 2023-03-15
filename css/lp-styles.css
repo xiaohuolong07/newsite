@@ -25,6 +25,24 @@ b, #city {
   color: var(--rosa);
 }
 
+.mg-t {
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Esconder */
+
+/* .esconder {
+  display: none;
+} */
+
+.esconder {
+  z-index: 1000;
+}
+
     /* Header */
 
 header {
@@ -94,6 +112,189 @@ header h1 {
   margin-right: 10px;
 }
 
+/* Sobre produto */
+
+.esconder {
+  margin-top: 50px;
+}
+
+.sobre-produto-card {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: white;
+  padding: 30px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.sobre-produto-card h2 {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.sobre-produto-card-p {
+  width: 100%;
+  font-size: 1.2rem !important;
+  color: black;
+  line-height: 19px;
+}
+
+.sobre-produto-main {
+  display: flex; 
+  justify-content: center;
+}
+
+.img-button-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+
+.img-button-align {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.image-sobre-produto {
+  width: 550px;
+}
+
+.sobre-produto-textos p {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-produto-textos i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.textos-icons p {
+  color: green;
+  display: flex;
+  align-items: center;
+}
+
+.textos-icons i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* OKS */
+
+.nosso-programa {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--rosa);
+}
+
+.oks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.oks p {
+  width: 400px;
+  line-height: 19px;
+  margin: 10px 10px;
+  display: flex;
+}
+
+.oks i {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+/* Programa Anxicare */
+
+.programa-anxicare {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programa-anxicare h1 {
+  color: var(--rosa);
+  margin-bottom: 10px;
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+.programa-anxicare p {
+  width: 1300px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+/* Mockup */
+
+.about-heading-product {
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 300px;
+}
+
+.anxicare {
+  font-size: 2rem;
+}
+
+/* about heading product texts */
+
+.about-heading-product-texts {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.about-heading-product-texts > h2 {
+  color: var(--rosa);
+}
+
+.about-heading-product-texts > p {
+  width: 100%;
+}
+
+.textos-icons-2 i {
+  color: var(--rosa);
+}
+
+/* Depoimentos */
+
+.depoimentos {
+  margin: 40px 0;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+}
+
+.depoimentos h2 {
+  margin-bottom: 10px;
+  color: var(--rosa);
+  text-align: center;
+  padding: 0 20px;
+  line-height: 25px;
+}
+
     /* Footer */
 
 footer {
@@ -105,6 +306,7 @@ footer {
   padding: 40px;
   align-items: center;
   position: sticky;
+  z-index: 10000;
 }
 
 .footer-programa {
@@ -137,6 +339,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 10000;
+  position: absolute;
 }
 
 .fb-texto {
@@ -145,6 +349,7 @@ footer {
   text-align: center;
   color: rgba(255, 255, 255, 0.311);
   width: 900px;
+  z-index: 10000;
 }
 
     /* Responsivo */
@@ -177,6 +382,83 @@ footer {
 @media (max-width: 930px) {
   .bg-headline {
     height: 100%;
+  }
+}
+
+/* Sobre produto */
+
+@media (max-width: 800px) {
+  .sobre-produto-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 624px) {
+  .image-sobre-produto {
+    width: 400px;
+  }
+}
+
+@media (min-width: 624px) {
+  .image-sobre-produto {
+    width: 290px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .image-sobre-produto {
+      width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .image-sobre-produto {
+      width: 270px;
+  }
+}
+
+@media (max-width: 455px) {
+ .image-sobre-produto {
+      width: 270px;
+  } 
+}
+
+@media (max-width: 330px) {
+ .image-sobre-produto {
+      width: 220px;
+  } 
+}
+
+/* Programa anxicare */
+
+@media (max-width: 1320px) {
+  .programa-anxicare p {
+    width: 90%;
+  }
+}
+
+/* Mockup anxi */
+
+@media (max-width: 800px) {
+  .about-heading-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-heading-product-texts {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-heading-product-texts > h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-heading-product-texts > p {
+    text-align: center;
+    width: 90%;
+    font-size: 1.2rem;
   }
 }
 
